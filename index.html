@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>燈乃工房 スタッフ業務アプリ</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Hiragino Sans', 'Noto Sans JP', sans-serif; background: #fafafa; min-height: 100vh; }
+  .header { background: linear-gradient(135deg, #f9a8d4, #c084fc); padding: 32px 20px 40px; color: #fff; text-align: center; }
+  .header .sub { font-size: 11px; font-weight: 600; letter-spacing: 3px; opacity: 0.85; margin-bottom: 6px; }
+  .header h1 { font-size: 24px; font-weight: 800; }
+
+  .content { max-width: 480px; margin: -20px auto 0; padding: 0 16px 40px; }
+
+  .app-card { background: #fff; border-radius: 16px; padding: 18px 20px; margin-bottom: 12px; display: flex; align-items: center; gap: 16px; text-decoration: none; box-shadow: 0 2px 10px rgba(0,0,0,0.06); transition: transform 0.1s; }
+  .app-card:active { transform: scale(0.98); }
+  .app-icon { width: 48px; height: 48px; border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 22px; flex-shrink: 0; }
+  .app-info { flex: 1; min-width: 0; }
+  .app-name { font-size: 15px; font-weight: 800; color: #222; margin-bottom: 2px; }
+  .app-desc { font-size: 12px; color: #9ca3af; }
+  .app-arrow { font-size: 18px; color: #d1d5db; }
+
+  .icon-sales { background: linear-gradient(135deg, #fce7f3, #fbcfe8); }
+  .icon-product { background: linear-gradient(135deg, #fef3c7, #fde68a); }
+  .icon-stafftask { background: linear-gradient(135deg, #dbeafe, #bfdbfe); }
+  .icon-consent { background: linear-gradient(135deg, #e0f2fe, #bae6fd); }
+
+  .footer-note { text-align: center; font-size: 11px; color: #c4c4c4; margin-top: 30px; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="sub">TONO KOBO STAFF</div>
+  <h1>スタッフ業務アプリ</h1>
+</div>
+
+<div class="content">
+
+  <a class="app-card" href="https://salon-tasks.vercel.app/salon-tasks.html" target="_blank">
+    <div class="app-icon icon-stafftask">✅</div>
+    <div class="app-info">
+      <div class="app-name">タスク管理</div>
+      <div class="app-desc">日々の業務・繰り返しタスク</div>
+    </div>
+    <div class="app-arrow">›</div>
+  </a>
+
+  <a class="app-card" href="https://salon-sales.vercel.app" target="_blank">
+    <div class="app-icon icon-sales">📊</div>
+    <div class="app-info">
+      <div class="app-name">売上管理</div>
+      <div class="app-desc">日々の売上・実績を記録</div>
+    </div>
+    <div class="app-arrow">›</div>
+  </a>
+
+  <a class="app-card" href="https://salon-products.vercel.app" target="_blank">
+    <div class="app-icon icon-product">📦</div>
+    <div class="app-info">
+      <div class="app-name">商品管理</div>
+      <div class="app-desc">在庫の確認・更新・発注</div>
+    </div>
+    <div class="app-arrow">›</div>
+  </a>
+
+  <div class="footer-note">燈乃工房 ／ 本店・2号店</div>
+</div>
+
+</body>
+</html>
