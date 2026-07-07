@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Owner Base | 燈乃工房</title>
+<title>燈乃工房 スタッフ業務アプリ</title>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { font-family: 'Hiragino Sans', 'Noto Sans JP', sans-serif; background: #fafafa; min-height: 100vh; }
@@ -21,16 +21,11 @@
   .app-desc { font-size: 12px; color: #9ca3af; }
   .app-arrow { font-size: 18px; color: #d1d5db; }
 
+  .icon-timecard { background: linear-gradient(135deg, #ccfbf1, #99f6e4); }
   .icon-sales { background: linear-gradient(135deg, #fce7f3, #fbcfe8); }
-  .icon-expense { background: linear-gradient(135deg, #ede9fe, #ddd6fe); }
   .icon-product { background: linear-gradient(135deg, #fef3c7, #fde68a); }
   .icon-stafftask { background: linear-gradient(135deg, #dbeafe, #bfdbfe); }
-  .icon-mytask { background: linear-gradient(135deg, #dcfce7, #bbf7d0); }
   .icon-consent { background: linear-gradient(135deg, #e0f2fe, #bae6fd); }
-  .icon-budget { background: linear-gradient(135deg, #fee2e2, #fecaca); }
-
-  .section-label { font-size: 12px; color: #b0b0b0; font-weight: 700; margin: 26px 4px 10px; }
-  .section-label:first-of-type { margin-top: 0; }
 
   .footer-note { text-align: center; font-size: 11px; color: #c4c4c4; margin-top: 30px; }
 </style>
@@ -38,77 +33,44 @@
 <body>
 
 <div class="header">
-  <div class="sub">TONO KOBO</div>
-  <h1>Owner Base</h1>
+  <div class="sub">AKARI NO KOBO STAFF</div>
+  <h1>スタッフ業務アプリ</h1>
 </div>
 
 <div class="content">
 
-  <a class="app-card" href="https://salon-sales.vercel.app" target="_blank">
-    <div class="app-icon icon-sales">📊</div>
+  <a class="app-card" href="https://timecard-app-beryl.vercel.app/" target="_blank">
+    <div class="app-icon icon-timecard">⏰</div>
     <div class="app-info">
-      <div class="app-name">売上管理</div>
-      <div class="app-desc">日々の売上・スタッフ実績を記録</div>
-    </div>
-    <div class="app-arrow">›</div>
-  </a>
-
-  <a class="app-card" href="https://misato-budget.vercel.app" target="_blank">
-    <div class="app-icon icon-budget">💴</div>
-    <div class="app-info">
-      <div class="app-name">家計簿</div>
-      <div class="app-desc">プライベートの収支管理</div>
-    </div>
-    <div class="app-arrow">›</div>
-  </a>
-
-  <a class="app-card" href="https://salon-expenses.vercel.app/salon-expenses.html" target="_blank">
-    <div class="app-icon icon-expense">💰</div>
-    <div class="app-info">
-      <div class="app-name">経費管理</div>
-      <div class="app-desc">経費の記録・集計・CSV出力</div>
-    </div>
-    <div class="app-arrow">›</div>
-  </a>
-
-  <div class="section-label"></div>
-
-  <a class="app-card" href="https://misato-tasks.vercel.app/misato-tasks.html" target="_blank">
-    <div class="app-icon icon-mytask">📝</div>
-    <div class="app-info">
-      <div class="app-name">個人タスク</div>
-      <div class="app-desc">自分専用のToDo管理</div>
+      <div class="app-name">タイムカード</div>
+      <div class="app-desc">出勤・休憩・退勤の打刻</div>
     </div>
     <div class="app-arrow">›</div>
   </a>
 
   <a class="app-card" href="https://salon-tasks.vercel.app/salon-tasks.html" target="_blank">
-    <div class="app-icon icon-stafftask">👥</div>
+    <div class="app-icon icon-stafftask">✅</div>
     <div class="app-info">
-      <div class="app-name">スタッフタスク</div>
-      <div class="app-desc">スタッフ共有のタスク・繰り返し業務</div>
+      <div class="app-name">タスク管理</div>
+      <div class="app-desc">日々の業務・繰り返しタスク</div>
     </div>
     <div class="app-arrow">›</div>
   </a>
 
-  <div class="section-label"></div>
+  <a class="app-card" href="https://salon-sales.vercel.app" target="_blank">
+    <div class="app-icon icon-sales">📊</div>
+    <div class="app-info">
+      <div class="app-name">売上管理</div>
+      <div class="app-desc">日々の売上・実績を記録</div>
+    </div>
+    <div class="app-arrow">›</div>
+  </a>
 
   <a class="app-card" href="https://salon-products.vercel.app" target="_blank">
     <div class="app-icon icon-product">📦</div>
     <div class="app-info">
       <div class="app-name">商品管理</div>
-      <div class="app-desc">メーカー・品番ごとの在庫と発注</div>
-    </div>
-    <div class="app-arrow">›</div>
-  </a>
-
-  <div class="section-label"></div>
-
-  <a class="app-card" href="https://consent-forms-six.vercel.app/consent-forms.html" target="_blank">
-    <div class="app-icon icon-consent">📋</div>
-    <div class="app-info">
-      <div class="app-name">同意書フォーム</div>
-      <div class="app-desc">本店タブレット用・お客様問診</div>
+      <div class="app-desc">在庫の確認・更新・発注</div>
     </div>
     <div class="app-arrow">›</div>
   </a>
